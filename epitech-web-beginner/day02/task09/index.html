@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- Starts the HTML document and may set its language. -->
+<html lang="en">
+ <!-- Starts the page's metadata and linked resources. -->
+ <head>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <meta charset="utf-8"/>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <title>
+   CodingPedia
+  <!-- Closes the matching HTML element. -->
+  </title>
+  <!-- Links a resource such as the CSS stylesheet. -->
+  <link href="codingpedia.css" rel="stylesheet"/>
+ <!-- Closes the matching HTML element. -->
+ </head>
+ <!-- Starts the visible page content. -->
+ <body>
+  <!-- Creates a structural container used to group or style page content. -->
+  <header class="box">
+   <!-- Creates a structural container used to group or style page content. -->
+   <div class="head">
+    <!-- Displays a heading or paragraph of text. -->
+    <h1>
+     Welcome to CodingPedia!
+    <!-- Closes the matching HTML element. -->
+    </h1>
+    <!-- Creates a structural container used to group or style page content. -->
+    <nav>
+     <!-- Creates a hyperlink; href specifies where it goes. -->
+     <a href="index.html">
+      Index
+     <!-- Closes the matching HTML element. -->
+     </a>
+     <!-- Creates a hyperlink; href specifies where it goes. -->
+     <a href="php.html">
+      PHP
+     <!-- Closes the matching HTML element. -->
+     </a>
+     <!-- Creates a hyperlink; href specifies where it goes. -->
+     <a href="sql.html">
+      SQL
+     <!-- Closes the matching HTML element. -->
+     </a>
+    <!-- Closes the matching HTML element. -->
+    </nav>
+   <!-- Closes the matching HTML element. -->
+   </div>
+  <!-- Closes the matching HTML element. -->
+  </header>
+  <!-- Creates a structural container used to group or style page content. -->
+  <div class="content">
+   <!-- Creates a structural container used to group or style page content. -->
+   <main class="box">
+    <!-- Displays a heading or paragraph of text. -->
+    <h2>
+     Welcome to CodingPedia!
+    <!-- Closes the matching HTML element. -->
+    </h2>
+    <!-- Displays a heading or paragraph of text. -->
+    <p>
+     CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multi-lingual which functions as a wiki.
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <br/>
+     CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.
+    <!-- Closes the matching HTML element. -->
+    </p>
+    <!-- Displays a heading or paragraph of text. -->
+    <h2>
+     Ask a question
+    <!-- Closes the matching HTML element. -->
+    </h2>
+    <!-- Creates a form for collecting and submitting user input. -->
+    <form>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="first">
+      First name
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="first" name="first" required=""/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="last">
+      Last name
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="last" name="last" required=""/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="email">
+      Email
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="email" name="email" required="" type="email"/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="age">
+      Age
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="age" max="99" min="3" type="number"/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="phone">
+      Phone
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="phone" maxlength="10" pattern="[0-9]{10}"/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <fieldset>
+      <!-- Defines an HTML element or attribute; check its tag name and values. -->
+      <legend>
+       Sex
+      <!-- Closes the matching HTML element. -->
+      </legend>
+      <!-- Defines an HTML element or attribute; check its tag name and values. -->
+      <label>
+       <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+       <input checked="" name="sex" type="radio" value="male"/>
+       male
+      <!-- Closes the matching HTML element. -->
+      </label>
+      <!-- Defines an HTML element or attribute; check its tag name and values. -->
+      <label>
+       <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+       <input name="sex" type="radio" value="female"/>
+       female
+      <!-- Closes the matching HTML element. -->
+      </label>
+     <!-- Closes the matching HTML element. -->
+     </fieldset>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="hair">
+      Hair color
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="hair" type="color"/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="date">
+      Date
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+     <input id="date" required="" type="date"/>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="technology">
+      Technology
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <select id="technology">
+      <!-- Defines an HTML element or attribute; check its tag name and values. -->
+      <option>
+       PHP
+      <!-- Closes the matching HTML element. -->
+      </option>
+      <!-- Defines an HTML element or attribute; check its tag name and values. -->
+      <option>
+       SQL
+      <!-- Closes the matching HTML element. -->
+      </option>
+     <!-- Closes the matching HTML element. -->
+     </select>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <label for="question">
+      Question
+     <!-- Closes the matching HTML element. -->
+     </label>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <textarea id="question" required=""></textarea>
+     <!-- Creates a clickable button. -->
+     <button>
+      Submit
+     <!-- Closes the matching HTML element. -->
+     </button>
+    <!-- Closes the matching HTML element. -->
+    </form>
+   <!-- Closes the matching HTML element. -->
+   </main>
+   <!-- Defines an HTML element or attribute; check its tag name and values. -->
+   <aside class="box">
+    <!-- Displays a heading or paragraph of text. -->
+    <p>
+     Hello! I am a computer science student interested in web development.
+    <!-- Closes the matching HTML element. -->
+    </p>
+   <!-- Closes the matching HTML element. -->
+   </aside>
+  <!-- Closes the matching HTML element. -->
+  </div>
+  <!-- Creates a structural container used to group or style page content. -->
+  <footer class="box">
+   <!-- Defines an HTML element or attribute; check its tag name and values. -->
+   <address>
+    Alaa Maachouk
+    <!-- Defines an HTML element or attribute; check its tag name and values. -->
+    <br/>
+    Address: Bussy-Saint-Georges, France
+    <!-- Defines an HTML element or attribute; check its tag name and values. -->
+    <br/>
+    Phone: 0000000000
+   <!-- Closes the matching HTML element. -->
+   </address>
+  <!-- Closes the matching HTML element. -->
+  </footer>
+ <!-- Closes the matching HTML element. -->
+ </body>
+<!-- Closes the HTML document. -->
+</html>

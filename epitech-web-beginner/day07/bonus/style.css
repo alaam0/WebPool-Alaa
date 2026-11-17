@@ -1,0 +1,78 @@
+
+body {
+    /* Sets the typeface to `Arial`. */
+    font-family: Arial;
+    /* Sets the background appearance to `#f3f4f6`. */
+    background: #f3f4f6;
+    /* Sets the space inside an element to `20px`. */
+    padding: 20px
+
+}
+
+main {
+    /* Sets the max width to `700px`. */
+    max-width: 700px;
+    /* Sets the space outside an element to `auto`. */
+    margin: auto;
+    /* Sets the background appearance to `white`. */
+    background: white;
+    /* Sets the space inside an element to `25px`. */
+    padding: 25px;
+    /* Sets the rounded corners to `10px`. */
+    border-radius: 10px
+
+}
+
+form {
+    /* Sets the layout/display behavior to `flex`. */
+    display: flex;
+    /* Sets the spacing between layout items to `8px`. */
+    gap: 8px;
+    /* Sets the flex wrap to `wrap`. */
+    flex-wrap: wrap;
+    /* Sets the margin bottom to `18px`. */
+    margin-bottom: 18px
+
+}
+
+input,select,button {
+    /* Sets the space inside an element to `10px`. */
+    padding: 10px
+
+}
+
+.note {
+    /* Sets the element border to `2px solid blue`. */
+    border: 2px solid blue
+
+}
+
+.email {
+    /* Sets the element border to `2px solid green`. */
+    border: 2px solid green
+
+}
+
+.todo {
+    /* Sets the element border to `2px solid red`. */
+    border: 2px solid red
+
+}
+
+li {
+    /* Sets the space inside an element to `12px`. */
+    padding: 12px;
+    /* Sets the space outside an element to `10px 0`. */
+    margin: 10px 0;
+    /* Sets the list style to `disc`. */
+    list-style: disc
+
+}
+
+.tags {
+    /* Sets the text size to `12px`. */
+    font-size: 12px;
+    /* Sets the text color to `#555`. */
+    color: #555
+
+}

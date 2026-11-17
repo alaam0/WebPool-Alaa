@@ -1,0 +1,131 @@
+* {
+    /* Sets the box sizing to `border-box`. */
+    box-sizing: border-box
+
+}
+
+body {
+    /* Sets the space outside an element to `0`. */
+    margin: 0;
+    /* Sets the space inside an element to `10px`. */
+    padding: 10px;
+    /* Sets the typeface to `Arial`. */
+    font-family: Arial
+
+}
+
+.blue,.green,.yellow,.purple,.pink,.red {
+    /* Sets the space inside an element to `25px`. */
+    padding: 25px;
+    /* Sets the space outside an element to `6px`. */
+    margin: 6px;
+    /* Sets the text alignment to `center`. */
+    text-align: center
+
+}
+
+.blue {
+    /* Sets the background appearance to `#67B3DD`. */
+    background: #67B3DD
+
+}
+
+.green {
+    /* Sets the background appearance to `#9EE062`. */
+    background: #9EE062
+
+}
+
+.yellow {
+    /* Sets the background appearance to `#FEDF6B`. */
+    background: #FEDF6B
+
+}
+
+.purple {
+    /* Sets the background appearance to `#6B2683`. */
+    background: #6B2683;
+    /* Sets the text color to `white`. */
+    color: white
+
+}
+
+.pink {
+    /* Sets the background appearance to `#F03DB5`. */
+    background: #F03DB5
+
+}
+
+.red {
+    /* Sets the background appearance to `#FC302D`. */
+    background: #FC302D
+
+}
+
+.articles {
+    /* Sets the layout/display behavior to `flex`. */
+    display: flex;
+    /* Sets the flex wrap to `wrap`. */
+    flex-wrap: wrap;
+    /* Sets the spacing between layout items to `8px`. */
+    gap: 8px
+
+}
+
+.articles article {
+    /* Sets the flexible layout sizing to `1 1 100%`. */
+    flex: 1 1 100%
+
+}
+/* Starts a responsive CSS rule that applies only at certain screen sizes. */
+@media (max-width:767px) {
+    
+    .articles article:nth-child(n+3) {
+        /* Sets the layout/display behavior to `none`. */
+        display: none
+    
+    }
+
+}
+/* Starts a responsive CSS rule that applies only at certain screen sizes. */
+@media (min-width:768px) and (max-width:1023px) {
+    
+    .blue {
+        /* Sets the element width to `50%`. */
+        width: 50%;
+        /* Sets the margin left to `0`. */
+        margin-left: 0
+    
+    }
+    
+    .articles article {
+        /* Sets the flexible layout sizing to `1 1 calc(50% - 8px)`. */
+        flex: 1 1 calc(50% - 8px)
+    
+    }
+    
+    .articles article:nth-child(n+5) {
+        /* Sets the layout/display behavior to `none`. */
+        display: none
+    
+    }
+
+}
+/* Starts a responsive CSS rule that applies only at certain screen sizes. */
+@media (min-width:1024px) {
+    
+    .blue {
+        /* Sets the element width to `50%`. */
+        width: 50%;
+        /* Sets the margin left to `0`. */
+        margin-left: 0
+    
+    }
+    
+    .articles article {
+        /* Sets the flexible layout sizing to `1 1 calc(33.333% - 8px)`. */
+        flex: 1 1 calc(33.333% - 8px)
+    
+    }
+
+}

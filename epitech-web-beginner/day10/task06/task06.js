@@ -1,0 +1,2 @@
+// Registers an event handler: the callback runs when the named event happens.
+document.getElementById("submit").addEventListener("click", async () => { const params = new URLSearchParams(); ["type", "brand", "price", "number"].forEach(id => params.set(id, document.getElementById(id).value)); const r = await fetch("task06.php?" + params); const data = await r.json(); document.getElementById("messages").textContent = data.message; });

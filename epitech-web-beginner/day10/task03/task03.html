@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Starts the HTML document and may set its language. -->
+<html lang="en">
+ <!-- Starts the page's metadata and linked resources. -->
+ <head>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <meta charset="utf-8"/>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <title>
+   AJAX task
+  <!-- Closes the matching HTML element. -->
+  </title>
+  <!-- Links a resource such as the CSS stylesheet. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+ <!-- Closes the matching HTML element. -->
+ </head>
+ <!-- Starts the visible page content. -->
+ <body class="container py-4">
+  <!-- Displays a heading or paragraph of text. -->
+  <h1>
+   Countries
+  <!-- Closes the matching HTML element. -->
+  </h1>
+  <!-- Creates a clickable button. -->
+  <button class="btn btn-primary" id="load">
+   Load countries
+  <!-- Closes the matching HTML element. -->
+  </button>
+  <!-- Creates a table, row, or cell to organize data. -->
+  <table class="table mt-3">
+   <!-- Defines an HTML element or attribute; check its tag name and values. -->
+   <thead>
+    <!-- Creates a table, row, or cell to organize data. -->
+    <tr>
+     <!-- Creates a table, row, or cell to organize data. -->
+     <th>
+      Country code
+     <!-- Closes the matching HTML element. -->
+     </th>
+     <!-- Creates a table, row, or cell to organize data. -->
+     <th>
+      Name
+     <!-- Closes the matching HTML element. -->
+     </th>
+    <!-- Closes the matching HTML element. -->
+    </tr>
+   <!-- Closes the matching HTML element. -->
+   </thead>
+   <!-- Defines an HTML element or attribute; check its tag name and values. -->
+   <tbody id="countries">
+   <!-- Closes the matching HTML element. -->
+   </tbody>
+  <!-- Closes the matching HTML element. -->
+  </table>
+  <!-- Loads or starts JavaScript for page interactions. -->
+  <script>
+   document.getElementById('load').addEventListener('click',()=>fetch('../countries.json').then(r=>r.json()).then(data=>{const body=document.getElementById('countries');body.innerHTML='';Object.entries(data).forEach(([code,name])=>{const row=document.createElement('tr');row.innerHTML='<td></td><td></td>';row.children[0].textContent=code;row.children[1].textContent=name;body.appendChild(row);});}));
+  </script>
+ <!-- Closes the matching HTML element. -->
+ </body>
+<!-- Closes the HTML document. -->
+</html>

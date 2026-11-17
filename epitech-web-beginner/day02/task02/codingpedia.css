@@ -1,0 +1,156 @@
+
+body {
+    /* Sets the background appearance to `#ddd`. */
+    background: #ddd;
+    /* Sets the typeface to `Arial,sans-serif`. */
+    font-family: Arial,sans-serif;
+    /* Sets the space outside an element to `0`. */
+    margin: 0;
+    /* Sets the text color to `#222`. */
+    color: #222
+
+}
+ 
+.box {
+    /* Sets the element border to `2px solid black`. */
+    border: 2px solid black;
+    /* Sets the space outside an element to `10px`. */
+    margin: 10px;
+    /* Sets the space inside an element to `10px 10px`. */
+    padding: 10px 10px;
+    /* Sets the background appearance to `white`. */
+    background: white
+
+}
+
+.head {
+    /* Sets the layout/display behavior to `grid`. */
+    display: grid;
+    /* Sets the grid column structure to `5fr 1fr`. */
+    grid-template-columns: 5fr 1fr;
+    /* Sets the align items to `center`. */
+    align-items: center
+
+}
+
+.content {
+    /* Sets the layout/display behavior to `flex`. */
+    display: flex;
+    /* Sets the spacing between layout items to `10px`. */
+    gap: 10px
+
+}
+
+.content main {
+    /* Sets the element width to `80%`. */
+    width: 80%
+
+}
+
+.content aside {
+    /* Sets the flexible layout sizing to `1`. */
+    flex: 1
+
+}
+
+nav a {
+    /* Sets the margin right to `8px`. */
+    margin-right: 8px
+
+}
+
+table {
+    /* Sets the border collapse to `collapse`. */
+    border-collapse: collapse;
+    /* Sets the element width to `100%`. */
+    width: 100%
+
+}
+
+td,th {
+    /* Sets the element border to `1px solid #333`. */
+    border: 1px solid #333;
+    /* Sets the space inside an element to `8px`. */
+    padding: 8px
+
+}
+
+label {
+    /* Sets the layout/display behavior to `block`. */
+    display: block;
+    /* Sets the margin top to `8px`. */
+    margin-top: 8px
+
+}
+
+input,select,textarea {
+    /* Sets the max width to `100%`. */
+    max-width: 100%;
+    /* Sets the space inside an element to `6px`. */
+    padding: 6px
+
+}
+
+textarea {
+    /* Sets the element width to `95%`. */
+    width: 95%;
+    /* Sets the min height to `90px`. */
+    min-height: 90px
+
+}
+
+button {
+    /* Sets the margin top to `10px`. */
+    margin-top: 10px;
+    /* Sets the space inside an element to `8px 18px`. */
+    padding: 8px 18px
+
+}
+
+.moving_square {
+    /* Sets the element width to `100px`. */
+    width: 100px;
+    /* Sets the element height to `100px`. */
+    height: 100px;
+    /* Sets the background appearance to `red`. */
+    background: red;
+    /* Sets the animation to `move 5s 5`. */
+    animation: move 5s 5
+
+}
+
+@keyframes move {
+    
+    0%,100% {
+        /* Sets the transform to `translate(0,0)`. */
+        transform: translate(0,0);
+        /* Sets the background appearance to `red`. */
+        background: red
+    
+    }
+    
+    25% {
+        /* Sets the transform to `translateY(300px)`. */
+        transform: translateY(300px);
+        /* Sets the background appearance to `green`. */
+        background: green
+    
+    }
+    
+    50% {
+        /* Sets the transform to `translate(300px,300px)`. */
+        transform: translate(300px,300px);
+        /* Sets the background appearance to `blue`. */
+        background: blue
+    
+    }
+    
+    75% {
+        /* Sets the transform to `translate(300px,0)`. */
+        transform: translate(300px,0);
+        /* Sets the background appearance to `yellow`. */
+        background: yellow
+    
+    }
+
+}

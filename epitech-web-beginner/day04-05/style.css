@@ -1,0 +1,173 @@
+* {
+    /* Sets the box sizing to `border-box`. */
+    box-sizing: border-box
+
+}
+
+body {
+    /* Sets the space outside an element to `0`. */
+    margin: 0;
+    /* Sets the typeface to `Arial,sans-serif`. */
+    font-family: Arial,sans-serif;
+    /* Sets the background appearance to `#f4f5f8`. */
+    background: #f4f5f8;
+    /* Sets the text color to `#202638`. */
+    color: #202638;
+    /* Sets the line height to `1.6`. */
+    line-height: 1.6
+
+}
+
+header {
+    /* Sets the background appearance to `#18243b`. */
+    background: #18243b;
+    /* Sets the text color to `white`. */
+    color: white;
+    /* Sets the space inside an element to `55px 8%`. */
+    padding: 55px 8%;
+
+}
+
+nav {
+    /* Sets the layout/display behavior to `flex`. */
+    display: flex;
+    /* Sets the spacing between layout items to `22px`. */
+    gap: 22px;
+    /* Sets the flex wrap to `wrap`. */
+    flex-wrap: wrap
+
+}
+
+nav a {
+    /* Sets the text color to `white`. */
+    color: white;
+    /* Sets the text decoration to `none`. */
+    text-decoration: none
+
+}
+
+h1 {
+    /* Sets the text size to `42px`. */
+    font-size: 42px;
+    /* Sets the margin bottom to `0`. */
+    margin-bottom: 0
+
+}
+
+main {
+    /* Sets the max width to `900px`. */
+    max-width: 900px;
+    /* Sets the space outside an element to `30px auto`. */
+    margin: 30px auto;
+    /* Sets the space inside an element to `0 20px`. */
+    padding: 0 20px
+
+}
+
+section {
+    /* Sets the background appearance to `white`. */
+    background: white;
+    /* Sets the space inside an element to `25px`. */
+    padding: 25px;
+    /* Sets the space outside an element to `20px 0`. */
+    margin: 20px 0;
+    /* Sets the rounded corners to `12px`. */
+    border-radius: 12px;
+    /* Sets the box shadow to `0 3px 12px #0001`. */
+    box-shadow: 0 3px 12px #0001;
+    /* Sets the transition to `transform .2s`. */
+    transition: transform .2s
+
+}
+
+section:hover {
+    /* Sets the transform to `translateY(-3px)`. */
+    transform: translateY(-3px)
+
+}
+
+li {
+    /* Sets the space outside an element to `8px 0`. */
+    margin: 8px 0
+
+}
+
+input,textarea {
+    /* Sets the layout/display behavior to `block`. */
+    display: block;
+    /* Sets the element width to `100%`. */
+    width: 100%;
+    /* Sets the space inside an element to `10px`. */
+    padding: 10px;
+    /* Sets the space outside an element to `6px 0 14px`. */
+    margin: 6px 0 14px;
+    /* Sets the element border to `1px solid #aaa`. */
+    border: 1px solid #aaa;
+    /* Sets the rounded corners to `5px`. */
+    border-radius: 5px
+
+}
+
+textarea {
+    /* Sets the min height to `120px`. */
+    min-height: 120px
+
+}
+
+button {
+    /* Sets the space inside an element to `11px 18px`. */
+    padding: 11px 18px;
+    /* Sets the background appearance to `#2367d1`. */
+    background: #2367d1;
+    /* Sets the text color to `white`. */
+    color: white;
+    /* Sets the element border to `0`. */
+    border: 0;
+    /* Sets the rounded corners to `5px`. */
+    border-radius: 5px;
+    /* Sets the mouse cursor appearance to `pointer`. */
+    cursor: pointer;
+    /* Sets the transition to `background .2s`. */
+    transition: background .2s
+
+}
+
+button:hover {
+    /* Sets the background appearance to `#17458e`. */
+    background: #17458e
+
+}
+
+footer {
+    /* Sets the text alignment to `center`. */
+    text-align: center;
+    /* Sets the space inside an element to `25px`. */
+    padding: 25px;
+    /* Sets the background appearance to `#18243b`. */
+    background: #18243b;
+    /* Sets the text color to `white`. */
+    color: white
+
+}
+/* Starts a responsive CSS rule that applies only at certain screen sizes. */
+@media(max-width:600px) {
+    
+    h1 {
+        /* Sets the text size to `32px`. */
+        font-size: 32px
+    
+    }
+    
+    header {
+        /* Sets the space inside an element to `35px 6%`. */
+        padding: 35px 6%
+    
+    }
+    
+    section {
+        /* Sets the space inside an element to `18px`. */
+        padding: 18px
+    
+    }
+
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Starts the HTML document and may set its language. -->
+<html lang="en">
+ <!-- Starts the page's metadata and linked resources. -->
+ <head>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <meta charset="utf-8"/>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- Defines an HTML element or attribute; check its tag name and values. -->
+  <title>
+   My items
+  <!-- Closes the matching HTML element. -->
+  </title>
+  <!-- Links a resource such as the CSS stylesheet. -->
+  <link href="style.css" rel="stylesheet"/>
+ <!-- Closes the matching HTML element. -->
+ </head>
+ <!-- Starts the visible page content. -->
+ <body>
+  <!-- Creates a structural container used to group or style page content. -->
+  <main>
+   <!-- Displays a heading or paragraph of text. -->
+   <h1>
+    My items
+   <!-- Closes the matching HTML element. -->
+   </h1>
+   <!-- Creates a form for collecting and submitting user input. -->
+   <form id="addForm">
+    <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+    <input id="itemText" placeholder="Write something" required=""/>
+    <!-- Defines an HTML element or attribute; check its tag name and values. -->
+    <select id="itemType">
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option>
+      note
+     <!-- Closes the matching HTML element. -->
+     </option>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option>
+      email
+     <!-- Closes the matching HTML element. -->
+     </option>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option>
+      todo
+     <!-- Closes the matching HTML element. -->
+     </option>
+    <!-- Closes the matching HTML element. -->
+    </select>
+    <!-- Creates a clickable button. -->
+    <button>
+     Add item
+    <!-- Closes the matching HTML element. -->
+    </button>
+   <!-- Closes the matching HTML element. -->
+   </form>
+   <!-- Creates a form for collecting and submitting user input. -->
+   <form id="searchForm">
+    <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+    <input id="searchText" placeholder="Search words"/>
+    <!-- Defines an HTML element or attribute; check its tag name and values. -->
+    <select id="searchType">
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option value="">
+      All types
+     <!-- Closes the matching HTML element. -->
+     </option>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option>
+      note
+     <!-- Closes the matching HTML element. -->
+     </option>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option>
+      email
+     <!-- Closes the matching HTML element. -->
+     </option>
+     <!-- Defines an HTML element or attribute; check its tag name and values. -->
+     <option>
+      todo
+     <!-- Closes the matching HTML element. -->
+     </option>
+    <!-- Closes the matching HTML element. -->
+    </select>
+    <!-- Creates an input field; its attributes control its type, name, and behavior. -->
+    <input id="searchTags" placeholder="Tags (comma separated)"/>
+    <!-- Creates a clickable button. -->
+    <button>
+     Search
+    <!-- Closes the matching HTML element. -->
+    </button>
+    <!-- Creates a clickable button. -->
+    <button id="reset" type="button">
+     Reset
+    <!-- Closes the matching HTML element. -->
+    </button>
+   <!-- Closes the matching HTML element. -->
+   </form>
+   <!-- Creates a list or an item inside a list. -->
+   <ul id="items">
+   <!-- Closes the matching HTML element. -->
+   </ul>
+  <!-- Closes the matching HTML element. -->
+  </main>
+  <!-- Loads or starts JavaScript for page interactions. -->
+  <script src="script.js">
+  </script>
+ <!-- Closes the matching HTML element. -->
+ </body>
+<!-- Closes the HTML document. -->
+</html>
